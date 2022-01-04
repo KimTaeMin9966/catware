@@ -7,8 +7,10 @@ This is a pretty powerful discord token grabber with a built in rat that not onl
 There is also a built in bot system to control the grabber on the victims pc
 
 # How to use
-add your webhook link on line 34
+add your webhook link on line 34\n
 add your discord bot token on line 792
+
+
 
 You can support this project by just starring the repository!
 Also, please don't use this for malicious purposes ;)
